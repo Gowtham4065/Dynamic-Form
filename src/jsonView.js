@@ -32,7 +32,8 @@ class jsonView extends Component {
                })}
                
             </div>
-            
+            {/* https://stackoverflow.com/questions/55613438/reactwrite-to-json-file-or-export-download-no-server
+            Code snippet for download json was copied from the above stackoverflow link with some changes */}
             <a className="button"
             href={`data:text/json;charset=utf-8,${encodeURIComponent(
               JSON.stringify(this.props.details,null, '\t')

@@ -36,16 +36,16 @@ input
 {
   position: absolute;
   left: 40vw;
- 
+  width:12vw
   
 }
 .display
 {
   margin-top: 10px;
   border: 2px solid black;
-  width: 45vw;
-  height: 20vw;
-  margin-left: 27vw;
+  width: 50vw;
+  height: 300px;
+  margin-left: 25vw;
   background-color:rgb(241, 237, 237);
   overflow: scroll;
   
@@ -73,4 +73,74 @@ input
    
 }
 
+@media screen and (max-width: 1000px) {
+  .border
+{
+ margin-top: 20px;
+  border: 2px solid black;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  background-color:rgb(241, 237, 237);
+}
+.display
+{
+  margin-top: 10px;
+  border: 2px solid black;
+  width: 55vw;
+  height: 300px;
+  margin-left: 23vw;
+  background-color:rgb(241, 237, 237);
+  overflow: scroll;
+  
+}
+}
+@media screen and (max-width: 750px) {
+  .border
+{
+ margin-top: 20px;
+  border: 2px solid black;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background-color:rgb(241, 237, 237);
+}
+.display
+{
+  margin-top: 10px;
+  border: 2px solid black;
+  width: 65vw;
+  height: 300px;
+  margin-left: 18vw;
+  background-color:rgb(241, 237, 237);
+  overflow: scroll;
+  
+}
 
+input
+{
+  
+  left: 40vw;
+  
+}
+}
+@media screen and (max-width: 550px) {
+  .border
+{
+ margin-top: 20px;
+  border: 2px solid black;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  background-color:rgb(241, 237, 237);
+}
+  
+}
+@media screen and (max-width: 460px) {
+  .border
+{
+ margin-top: 20px;
+  border: 2px solid black;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  background-color:rgb(241, 237, 237);
+}
+  
+}

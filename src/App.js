@@ -103,8 +103,8 @@ function App() {
            <input type="text" name="type" value={formData.contactDetails[i].type} placeholder="Type" onChange={(e)=>handleInput(i,e,'contact')} pattern="^[a-zA-Z]+$" title="Enter the type of number(Only Alphabets)"/>
            <input style={{marginLeft:'15vw'}} value={formData.contactDetails[i].phoneno} placeholder="PhoneNo"  pattern="[0-9]{10}" title="10 Digit Contact Number" name="phoneno"  type="text" onChange={(e)=>handleInput(i,e,'contact')}/>
            </div>}
-           {i!=0?<button style={{left:'68vw',position:'absolute'}} onClick={(e)=>handleRemove(e,'contact',i)}>-</button>:''}
-           {i==formData.contactDetails.length-1?<button style={{left:'70vw',position:'absolute'}} onClick={(e)=>handleAdd(e,'contact')}>+</button>:''}<br></br>
+           {i!=0?<button style={{left:'69vw',position:'absolute'}} onClick={(e)=>handleRemove(e,'contact',i)}>-</button>:''}
+           {i==formData.contactDetails.length-1?<button style={{left:'71vw',position:'absolute'}} onClick={(e)=>handleAdd(e,'contact')}>+</button>:''}<br></br>
             </div> :'')})
            
            }
@@ -113,7 +113,7 @@ function App() {
            {formData.skills.map((x,i)=>{return(
            <div>
           {i==0?<label className="label">Skills :     </label>:''}
-           <input type="text" size="9" value={formData.skills[i]} onChange={(e)=>handleInput(i,e,'skills')}/>
+           <input type="text" size="9" style={{width:'7vw'}} value={formData.skills[i]} onChange={(e)=>handleInput(i,e,'skills')}/>
            {i!=0?<button style={{left:'50vw',position:'absolute'}} onClick={(e)=>handleRemove(e,'skills',i)}>-</button>:''}
            {i==formData.skills.length-1?<button style={{left:'55vw',position:'absolute'}} onClick={(e)=>handleAdd(e,'skills')}>+</button>:''}<br></br>
            </div>
@@ -129,7 +129,7 @@ function App() {
         </form>
       </div>
       
-      <button onClick={()=>{setViewData(true)}}style={{marginLeft:'45vw',marginTop:'2.5vw',width:'130px',border:'none',height:'25px',backgroundColor:'rgb(209, 192, 192)'}} >View Data</button>
+      <button onClick={()=>{setViewData(true)}} style={{marginLeft:'45vw',marginTop:'50px',width:'130px',border:'none',height:'25px',backgroundColor:'rgb(209, 192, 192)'}} >View Data</button>
       {viewData?<JsonView details={employeeDetails}/>:''}
     </div>
   );
