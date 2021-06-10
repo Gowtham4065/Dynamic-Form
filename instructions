@@ -1,0 +1,25 @@
+Cloning the Project from the github in gitbash
+
+1)  git clone https://github.com/Gowtham4065/Dynamic-Form.git
+
+In command prompt, go to the following cloned project
+
+2) npm install   ---> Execute this command to install all the node modules
+
+3) npm start -----> will run the application in http://localhost:3000/
+
+4) npm run build -> to build the application
+
+5) npm install -g firebase-tools -> To install the firebase tools
+
+6) firebase login -> To login into the firebase
+
+7) firebase init -> Intialize your project
+
+8) firebase deploy -> To deploy the project
+
+The following link has the hosted application
+
+https://dynamicform-466f4.web.app/
+
+
