@@ -1,0 +1,76 @@
+.App {
+  
+}
+
+.font
+{
+  font-size: 25px;
+  text-align: center;
+}
+.label
+{
+  
+}
+.border
+{
+ margin-top: 20px;
+  border: 2px solid black;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  background-color:rgb(241, 237, 237);
+}
+.label
+{
+  padding-left: 30px;
+  
+  
+}
+.field
+{
+ 
+  padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+input
+{
+  position: absolute;
+  left: 40vw;
+ 
+  
+}
+.display
+{
+  margin-top: 10px;
+  border: 2px solid black;
+  width: 45vw;
+  height: 20vw;
+  margin-left: 27vw;
+  background-color:rgb(241, 237, 237);
+  overflow: scroll;
+  
+}
+.App-header {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 100px;
+}
+.data
+{
+  margin-top: 1vw;
+}
+.button
+{
+  position: absolute;
+  text-decoration: none;
+  background-color: rgb(209, 192, 192);
+  color: black;
+  text-align: center;
+  padding: 2px 6px 2px 6px;
+  width: 130px;
+  height: 25px;
+  margin-left: 45vw;
+  margin-top: 0.5vw;
+   
+}
+
+
