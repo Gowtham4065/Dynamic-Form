@@ -83,11 +83,11 @@ function App() {
         <form onSubmit={(e)=>addEmployeeDetails(e,'tyh')}>
           <div className="field"> 
           <label className="label">Name :     </label>
-         <input type="text" value={formData.name} required onChange={(e)=>{setFormData({...formData,name:e.target.value})}}/>
+         <input type="text" value={formData.name} pattern="^(?!\s)[ A-Za-z0-9_@.,/#&+-]+" title="Accepts following only A-Za-z0-9_@.,/#&+- .No spaces are allowed at the first " required onChange={(e)=>{setFormData({...formData,name:e.target.value})}}/>
           </div>
           <div className="field">
           <label className="label">Designation :     </label>
-           <input type="text" value={formData.desgination} required onChange={(e)=>{setFormData({...formData,desgination:e.target.value})}}/>
+           <input type="text" value={formData.desgination} pattern="^(?!\s)[ A-Za-z0-9_@.,/#&+-]+" title="Accepts following only A-Za-z0-9_@.,/#&+- .No spaces are allowed at the first" required onChange={(e)=>{setFormData({...formData,desgination:e.target.value})}}/>
            </div>
            <div className="field">
            {
