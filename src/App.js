@@ -73,7 +73,7 @@ function App() {
     let details = [...employeeDetails];
     details.push(formData)
     setEmployeeDetails(details)
-    alert('Details added succesfully')
+    alert('Details added succesfully. Please click view data to view the details entered')
     setFormData({name:'',desgination:'',contactDetails:[{type:'',phoneno:''}],skills:[''],dob:''})
   }
   return (
@@ -104,7 +104,7 @@ function App() {
            <input style={{marginLeft:'15vw'}} value={formData.contactDetails[i].phoneno} placeholder="PhoneNo"  pattern="[0-9]{10}" title="10 Digit Contact Number" name="phoneno"  type="text" onChange={(e)=>handleInput(i,e,'contact')}/>
            </div>}
            {i!=0?<button style={{left:'69vw',position:'absolute'}} onClick={(e)=>handleRemove(e,'contact',i)}>-</button>:''}
-           {i==formData.contactDetails.length-1?<button style={{left:'71vw',position:'absolute'}} onClick={(e)=>handleAdd(e,'contact')}>+</button>:''}<br></br>
+           {i==formData.contactDetails.length-1?<button style={{left:'72vw',position:'absolute'}} onClick={(e)=>handleAdd(e,'contact')}>+</button>:''}<br></br>
             </div> :'')})
            
            }
